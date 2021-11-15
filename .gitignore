@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+gm1.sol
+gm2.sol
+gm3.sol
 # dependencies
 /node_modules
 /.pnp

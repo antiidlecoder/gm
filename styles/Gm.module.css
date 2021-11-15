@@ -1,0 +1,74 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column-reverse;
+}
+
+.socials {
+  margin: 15px 0;
+  font-size: 1.2em;
+  display: flex;
+}
+
+.socials a {
+  display: block;
+  margin: 0 15px;
+}
+
+.twitter {
+  width: 25px;
+}
+.socials:hover + h1 {
+  color: #fff;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+
+.center {
+  text-align: center;
+}
+
+.main h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gm {
+  width: 300px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  margin: 15px;
+  height: 300px;
+}
+
+.gm p {
+  margin: 0;
+}
+
+.onchcain {
+  position: absolute;
+  bottom: 50px;
+}
