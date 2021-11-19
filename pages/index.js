@@ -59,7 +59,7 @@ export default function Home() {
     "gm :uponly:",
     "gm :web3:",
     "gm :internet:",
-    "gm :sunflower:",
+    "gm :inspired:",
     "gm :creators:",
     "gm :community:",
     "gm :aliens:",
