@@ -141,7 +141,11 @@ export default function Home() {
           </div>
           <div className={styles.center}>
             <h1>{gms[seconds]}</h1>
-            <span>69 good mornings stored on chain.</span>
+            <br />
+            <span>69 ways to say gm</span>
+            <br />
+            <span>stored on chain</span>
+            <br />
           </div>
         </div>
       </main>
