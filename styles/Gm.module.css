@@ -30,6 +30,9 @@
 .twitter {
   width: 25px;
 }
+.os {
+  margin: 0;
+}
 .socials:hover + h1 {
   color: #fff;
 }
@@ -50,7 +53,6 @@
 
 .center span {
   display: block;
-  margin: 5px 0;
 }
 
 .main h1 {
