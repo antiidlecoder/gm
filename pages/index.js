@@ -143,11 +143,11 @@ export default function Home() {
           <a>0xFF9C1b15B16263C61d017ee9F65C50e4AE0113D7</a>
 
           <div className={styles.center}>
-            <h1>{gms[seconds]}</h1>
-            <br />
             <span>the gm :project: is an on chain art experiment.</span>
             <br />
             <span>69 ways to say gm.</span>
+            <h1>{gms[seconds]}</h1>
+
             <br />
             <span>inspired by Loot & The n project</span>
             <br />
