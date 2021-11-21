@@ -156,7 +156,7 @@ export default function Home() {
           </a>
 
           <div className={styles.center}>
-            <span>the gm :project: is an on chain meme experiment.</span>
+            <span>the gm :project: is an on-chain meme experiment.</span>
             <br />
             <span>69 ways to say gm.</span>
             <h1>{gms[seconds]}</h1>
