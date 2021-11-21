@@ -126,7 +126,11 @@ export default function Home() {
               </svg>
             </a>
 
-            <a href="https://opensea.io/" target="_blank" rel="noreferrer">
+            <a
+              href="https://opensea.io/collection/gm-project"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -158,7 +162,7 @@ export default function Home() {
             <h1>{gms[seconds]}</h1>
 
             <br />
-            <span>inspired by Loot & the n project</span>
+            <span>inspired by Loot & The n project</span>
             <br />
           </div>
         </div>
