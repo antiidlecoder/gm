@@ -7,7 +7,7 @@ export default function Home() {
     "gm",
     "gm.",
     "GM!",
-    "gm :broom:",
+    "gm :sun_with_face:",
     "gm :positivity:",
     "gm :smile:",
     "gm :memes:",
@@ -143,7 +143,13 @@ export default function Home() {
             </a>
             <div className={styles.bg}></div>
           </div>
-          <a>0xFF9C1b15B16263C61d017ee9F65C50e4AE0113D7</a>
+          <a
+            href="https://etherscan.io/address/0xb7391bac335fa07286b052a037302c7ab2e69b6b"
+            target="_blank"
+            rel="noreferrer"
+          >
+            0xB7391bac335fa07286B052a037302C7ab2e69b6b
+          </a>
 
           <div className={styles.center}>
             <span>the gm :project: is an on chain meme experiment.</span>
