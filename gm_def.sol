@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.7;
+pragma solidity 0.8.10;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
@@ -18,7 +18,7 @@ contract gm is ERC721Enumerable, ReentrancyGuard, Ownable {
         "gm", 
         "gm.",
         "GM!",
-        "gm :broom:",
+        "gm :sun_with_face:",
         "gm :positivity:",
         "gm :smile:",
         "gm :memes:",
@@ -87,11 +87,15 @@ contract gm is ERC721Enumerable, ReentrancyGuard, Ownable {
     ];
         
     // tokenid / gm array index
-    mapping(uint => string) public tokenIdToGm;
+    mapping(uint => string) private tokenIdToGm;
 
     function getRandom() private view returns (uint256) {
         uint gmsLen = gms.length;
         return uint256(keccak256(abi.encodePacked(block.timestamp)))%gmsLen;
+    }
+    
+    function getGm(uint256 tokenId) public view returns (string memory) {
+        return tokenIdToGm[tokenId];
     }
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
@@ -129,7 +133,7 @@ contract gm is ERC721Enumerable, ReentrancyGuard, Ownable {
  
     function claim() public nonReentrant {
         require(totalSupply() < 70, "all gm's have been minted.");
-        //require(balanceOf(_msgSender()) == 0, "only one gm per address");
+        require(balanceOf(_msgSender()) < 3, "only 3 gm's per address");
         
         uint gmIndex = getRandom();
         _safeMint(_msgSender(), totalSupply()+1);
